@@ -1,0 +1,7 @@
+<h1><%= @list.name %></h1>
+<ul>
+    <% @list.plants.each do |plant| %>
+        <li><%= plant.common_name %> <%= link_to 'Show Plant Info', plant %></li>
+    <% end %>
+</ul>
+<p><%= link_to 'Back', :back %></p>

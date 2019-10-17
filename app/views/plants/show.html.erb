@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Common name:</strong>
+  <%= @plant.common_name %>
+</p>
+
+<p>
+  <strong>Sc name:</strong>
+  <%= @plant.sc_name %>
+</p>
+
+<p>
+  <strong>Img url:</strong>
+  <%= @plant.img_url %>
+</p>
+
+<p>
+  <strong>Info:</strong>
+  <%= @plant.info %>
+</p>
+
+<%= link_to "Add Plant to List", addplant_path(@plant) %>
+<%= link_to 'Edit', edit_plant_path(@plant) %> |
+<%= link_to 'Back', :back %>

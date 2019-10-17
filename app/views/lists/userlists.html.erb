@@ -1,0 +1,8 @@
+<h1>My Lists</h1>
+
+<% current_user.lists.each do |data| %>
+    <p class= "list-user">
+        List Name: <%= data.name %><br>
+        <%= link_to 'Show List', data %>
+    </p>
+<% end %>

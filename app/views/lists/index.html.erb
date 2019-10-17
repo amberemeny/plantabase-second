@@ -1,0 +1,8 @@
+<h1>All Lists</h1>
+<% @list.each do |data| %>
+    <p class= "list-index">
+        List Name: <%= data.name %><br>
+        Author: <%= data.user.email %><br>
+        <%= link_to 'Show List', data %>
+    </p>
+<% end %>
