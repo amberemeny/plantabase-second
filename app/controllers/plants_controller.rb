@@ -65,6 +65,10 @@ class PlantsController < ApplicationController
     
   end
 
+  def planttolist
+    render json: @plant.list_ids
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_plant
@@ -73,6 +77,6 @@ class PlantsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def plant_params
-      params.require(:plant).permit(:common_name, :sc_name, :img_url, :info)
+      params.require(:plant).permit(:common_name, :sc_name, :img_url, :info, :list_ids => [])
     end
 end

@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
   devise_for :users
   get "plants/:id/addplant", to: "plants#addplant", as: "addplant"
-  root 'plants#index'
+  post "plants/:id/addplant", to: "plants#planttolist", as: "updateplantlist"
+  root 'welcome#index'
   get "lists/userlists", to: "lists#userlists"
   resources :plants
   resources :lists

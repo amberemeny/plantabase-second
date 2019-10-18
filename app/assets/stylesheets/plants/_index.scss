@@ -1,0 +1,62 @@
+@import '../mixins';
+
+.heading-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: darkblue;
+    #plant-title {
+        // background: crimson;
+        padding: 5px;
+    }
+    .new-plant-link {
+        // background-color: cadetblue;
+        width: 30%;
+        margin: 0px 5px;
+        button {
+            width: 100%;
+        }
+    }
+}
+table {
+    background: #ECD4BA;
+    // border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5px;
+    thead {
+        // background: orange;
+        
+        tr {
+            // background: yellow;
+            
+            th {
+                text-align: center;
+                background: rgb(199, 92, 57);
+                border: 1px solid black;
+                padding: 5px;
+            }
+        }
+    }
+    tbody {
+        // background: green;
+        tr {
+            #plant-image-column {
+                // background-color: orange;
+                width: 150px;
+            }
+            // background: aqua;
+            td {
+                text-align: center;
+                // background: blue;
+                padding: 5px;
+                border: 1px solid black;
+                a {
+                    // background: blueviolet;
+                    margin: 0px;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}

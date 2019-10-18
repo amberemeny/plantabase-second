@@ -1,0 +1,88 @@
+@import 'mixins';
+
+body {
+    // background-color: #7A8450;
+    background: {
+        image: asset_url("background-tile.jpg");
+     }
+    @include no-margin-padding;
+    header {
+        // background: orangered;
+        @include no-margin-padding;
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #340F09;
+            @include no-margin-padding;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            ul {
+                // background: yellow;
+                @include no-margin-padding;
+                display: flex;
+                list-style-type: none;
+                padding: 5px;
+                li {
+                    // background: yellowgreen;
+                    @include no-margin-padding;
+                    padding: 5px;
+                    a {
+                        // background: green;
+                        @include no-margin-padding;
+                        padding: 5px;
+                        color: #DFB589;
+                        text-decoration: none;
+
+                        &:hover {
+                            background-color: #A3320B;
+                        }
+                    }
+                }         
+            }
+            #link-nav {
+                li {
+                    a {
+
+                    }
+                }
+                #web-title {
+                    color: rgb(248, 170, 87);
+                    text-transform: uppercase;
+                    text-shadow: 1px 1px 3px black;
+                    letter-spacing: 2px;
+                }
+            }
+            #login-nav {
+                li {
+                    a {
+
+                    }
+                }
+            }
+        }
+    }
+    main {
+        background-color: white;
+        max-width: 700px;
+        margin: auto;
+        margin-top: 36px;
+        height: 100%;
+        h1 {
+            @include no-margin-padding;
+        }
+    }
+    footer {
+        min-width: 100%;
+        position: relative;
+        background: #340F09;
+        padding: 5px 0px;
+        z-index: 1;
+        #copyright {
+            text-align: center;
+            color: #DFB589;
+            padding: 5px;
+        }
+    }
+}

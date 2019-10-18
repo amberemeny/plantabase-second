@@ -1,25 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Common name:</strong>
-  <%= @plant.common_name %>
-</p>
+<div id= show-content>
+  <div id= "plant-show-heading">
+    <div id= "plant-heading-titles">
+      <h1><%= @plant.common_name %></h1>
+      <i><%= @plant.sc_name %></i>
+    </div>
+    <div id="plant-heading-links">
+      <%= link_to "<button>Add Plant to List</button>".html_safe, addplant_path(@plant) %>
+      <%= link_to "<button>Edit</button>".html_safe, edit_plant_path(@plant) %>
+      <%= link_to "<button>Back</button>".html_safe, :back %>
+    </div>
+  </div>
 
-<p>
-  <strong>Sc name:</strong>
-  <%= @plant.sc_name %>
-</p>
-
-<p>
-  <strong>Img url:</strong>
-  <%= @plant.img_url %>
-</p>
-
-<p>
-  <strong>Info:</strong>
-  <%= @plant.info %>
-</p>
-
-<%= link_to "Add Plant to List", addplant_path(@plant) %>
-<%= link_to 'Edit', edit_plant_path(@plant) %> |
-<%= link_to 'Back', :back %>
+  <div id= "plant-details-div">
+    <div id= "plant-show-img-div">
+      <%= @plant.img_url ? image_tag(@plant.img_url) : "" %>
+    </div>
+    <p id= "info-div">
+      <%= @plant.info %>
+    </p>
+  </div>
+</div>

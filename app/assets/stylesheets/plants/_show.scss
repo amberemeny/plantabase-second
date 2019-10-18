@@ -1,0 +1,68 @@
+@import '../mixins';
+
+main {
+    #show-content {
+        display: flex;
+        flex-direction: column;
+        background-color: #7A8450;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        #plant-show-heading {
+            // background-color: crimson;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            #plant-heading-titles {
+                margin: 15px 10px 10px 15px;
+                padding: 5px 10px;
+                background-color: white;
+                box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+                h1 {
+                    line-height: 25px;
+                    // background-color: orangered;
+                }
+            }
+            #plant-heading-links {
+                // background-color: purple;
+                display: flex;
+                padding: 10px;
+                a {
+                    // background-color: plum;
+                    padding: 5px;
+                    margin: 0px 10px;
+                    button {
+                        font-size: 16px;
+                        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+                        padding: 5px 10px;
+                    }
+                }
+
+            }
+        }
+        #plant-details-div {
+            display: flex;
+            // background-color: orange;
+            padding: 10px;
+            padding-top: 0px;
+            #plant-show-img-div {
+                // background-color: yellow;
+                display: flex;
+                align-items: center;
+                max-width: 50%;
+                margin: 5px;
+                box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+                img {
+                    // background-color: yellowgreen;
+                    max-width: 100%;
+                }
+            }
+            #info-div {
+                max-width: 50%;
+                background-color: rgb(255, 255, 255);
+                margin: 5px;
+                padding: 10px;
+                height: 100%;
+                box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}
