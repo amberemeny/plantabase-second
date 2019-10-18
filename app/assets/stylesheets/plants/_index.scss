@@ -24,7 +24,8 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin-top: 5px;
-    thead {
+    border-spacing: 0px;
+        thead {
         // background: orange;
         
         tr {
@@ -35,6 +36,7 @@ table {
                 background: rgb(199, 92, 57);
                 border: 1px solid black;
                 padding: 5px;
+                font-size: 16px;
             }
         }
     }
@@ -45,14 +47,23 @@ table {
                 // background-color: orange;
                 width: 150px;
             }
+            #plant-sc-name-column {
+                font-style: italic;
+            }
             // background: aqua;
             td {
                 text-align: center;
                 // background: blue;
-                padding: 5px;
+                // padding: 5px;
                 border: 1px solid black;
+                font-size: 16px;
+                img {
+                    // margin: 5px;
+                }
                 a {
                     // background: blueviolet;
+                    // text-decoration: none;
+                    color: black;
                     margin: 0px;
                     padding: 0px;
                 }

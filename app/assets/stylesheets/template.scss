@@ -1,22 +1,20 @@
 @import 'mixins';
 
 body {
-    // background-color: #7A8450;
-    background: {
-        image: asset_url("background-tile.jpg");
-     }
+    background-color: #7A8450;
     @include no-margin-padding;
     header {
-        // background: orangered;
         @include no-margin-padding;
         nav {
             position: fixed;
-            top: 0;
+            top: 0px;
             width: 100%;
             background: #340F09;
             @include no-margin-padding;
             display: flex;
+            height: 50px;
             justify-content: space-between;
+            align-items: center;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
             ul {
                 // background: yellow;
@@ -25,6 +23,7 @@ body {
                 list-style-type: none;
                 padding: 5px;
                 li {
+                    font-size: 18px;
                     // background: yellowgreen;
                     @include no-margin-padding;
                     padding: 5px;
@@ -67,8 +66,8 @@ body {
         background-color: white;
         max-width: 700px;
         margin: auto;
-        margin-top: 36px;
         height: 100%;
+        margin-top: 50px;
         h1 {
             @include no-margin-padding;
         }
@@ -78,7 +77,6 @@ body {
         position: relative;
         background: #340F09;
         padding: 5px 0px;
-        z-index: 1;
         #copyright {
             text-align: center;
             color: #DFB589;

@@ -20,7 +20,7 @@
       <tr>
         <td id="plant-image-column"><%= plant.img_url ? image_tag(plant.img_url, width: 150) : "" %></td>
         <td><%= plant.common_name %></td>
-        <td><%= plant.sc_name %></td>
+        <td id= "plant-sc-name-column"><%= plant.sc_name %></td>
         <td class= "table-center"><%= link_to 'Details', plant %></td>
         <%# <td><%= link_to 'Edit', edit_plant_path(plant) %>
         <%# <td><%= link_to 'Destroy', plant, method: :delete, data: { confirm: 'Are you sure?' }</%#> %>
