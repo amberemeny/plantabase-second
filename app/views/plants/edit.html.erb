@@ -1,6 +1,10 @@
-<h1>Editing Plant</h1>
 
-<%= render 'form', plant: @plant %>
+<div class= "plant-form">
+    <h1 class= "form-title">Editing <%= @plant.common_name %></h1>
+    <%= render 'form', plant: @plant %>
+</div>
 
-<%= link_to 'Show', @plant %> |
-<%= link_to 'Back', plants_path %>
+<div id= "main-nav-links">
+    <%= link_to 'Show', @plant %>
+    <%= link_to 'Back', plants_path %>
+</div>

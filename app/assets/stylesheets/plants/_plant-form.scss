@@ -1,0 +1,97 @@
+
+
+.plant-form {
+    padding: 5px;
+    margin: 0px auto;
+    max-width: 400px;
+    background: #DFB589;
+    border: 10px solid olive;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    .form-title {
+        // background: blueviolet;
+        text-align: center;
+        padding: 5px;
+    }
+    form {
+        // background: yellowgreen;
+        padding: inherit;
+        margin: 0px;
+        
+        .singleline {
+            // background: pink;
+            display: flex;
+            width: 350px;
+            margin: auto;
+            justify-content: space-between;
+            padding: 5px;
+            label {
+                // background: powderblue;
+                padding: 5px;
+                font-size: 14px;
+            }
+            input {
+                // background: gold;
+                padding: 5px;
+                width: 200px;
+                font-size: 14px;
+            }
+        }
+        .multiline {
+            // background: crimson;
+            padding: inherit;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            max-width: 360px;
+            label {
+                // background: orange;
+                padding: 5px;
+                margin: 5px;
+                max-width: 100%;
+                font-size: 14px;
+                padding-top: 0px;
+                margin-top: 0px;
+            }
+            textarea {
+                // background: purple;
+                height: 200px;
+                max-width: 100%;
+                padding: 5px;
+                margin: 5px;
+                resize: none;
+                font-size: 14px;
+                margin-top: 0px;
+                padding-top: 0px;
+
+            }
+        }
+        .actions {
+            // background: yellow;
+            padding: inherit;
+            margin: inherit;
+            display: flex;
+            justify-content: center;
+            input {
+                font-size: 18px;
+                width: 200px;
+                padding: 5px;
+                
+            }
+        }
+    }
+}
+#main-nav-links {
+    // background: green;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+        padding: 5px;
+        font-size: 18px;
+        // background: blue;
+    }
+}

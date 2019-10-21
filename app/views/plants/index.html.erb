@@ -5,28 +5,30 @@
   <%= link_to "<button>Add a Plant</button>".html_safe , new_plant_path, class: "new-plant-link" %>
 </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Name</th>
-      <th>Scientific Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @plants.each do |plant| %>
+<div id="index-table-div">
+  <table>
+    <thead>
       <tr>
-        <td id="plant-image-column"><%= plant.img_url ? image_tag(plant.img_url, width: 150) : "" %></td>
-        <td><%= plant.common_name %></td>
-        <td id= "plant-sc-name-column"><%= plant.sc_name %></td>
-        <td class= "table-center"><%= link_to 'Details', plant %></td>
-        <%# <td><%= link_to 'Edit', edit_plant_path(plant) %>
-        <%# <td><%= link_to 'Destroy', plant, method: :delete, data: { confirm: 'Are you sure?' }</%#> %>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Scientific Name</th>
+        <th colspan="5"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @plants.each do |plant| %>
+        <tr>
+          <td id="plant-image-column"><%= plant.img_url ? image_tag(plant.img_url, width: 150) : "" %></td>
+          <td id="plant-name-column"><%= plant.common_name %></td>
+          <td id= "plant-sc-name-column"><%= plant.sc_name %></td>
+          <td id= "plant-details-column"><%= link_to 'Details', plant %></td>
+          <%# <td><%= link_to 'Edit', edit_plant_path(plant) %>
+          <%# <td><%= link_to 'Destroy', plant, method: :delete, data: { confirm: 'Are you sure?' }</%#> %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
 

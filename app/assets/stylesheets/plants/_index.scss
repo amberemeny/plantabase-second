@@ -18,54 +18,64 @@
         }
     }
 }
-table {
-    background: #ECD4BA;
-    // border: 1px solid black;
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 5px;
-    border-spacing: 0px;
-        thead {
-        // background: orange;
-        
-        tr {
-            // background: yellow;
-            
-            th {
-                text-align: center;
-                background: rgb(199, 92, 57);
-                border: 1px solid black;
-                padding: 5px;
-                font-size: 16px;
+
+#index-table-div {
+    // background: green;
+    // padding: 5px;
+    border: 8px solid olive;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    table {
+        border-spacing: 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        border-collapse: collapse;
+        background: crimson;
+        border: 1px black solid;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+        // border-radius: 5px;
+            thead {
+                background: #5F000B;
+                color: #DFB589;
+            tr {
+                // background: orange;
+                th {
+                    border: 1px solid black;
+                    // background: yellow;
+                    padding: 5px;
+                    // border-radius: 5px;
+                }
             }
         }
-    }
-    tbody {
-        // background: green;
-        tr {
-            #plant-image-column {
-                // background-color: orange;
-                width: 150px;
-            }
-            #plant-sc-name-column {
-                font-style: italic;
-            }
-            // background: aqua;
-            td {
-                text-align: center;
-                // background: blue;
-                // padding: 5px;
-                border: 1px solid black;
-                font-size: 16px;
-                img {
-                    // margin: 5px;
+        tbody {
+            // background: yellowgreen;
+            tr {
+                // background: green;
+
+                #plant-image-column {
+                    // background: aqua;
+                    width: 150px;
+                    img {
+                        // background: blue;
+                        vertical-align: middle;
+                    }
                 }
-                a {
+                #plant-name-column {
                     // background: blueviolet;
-                    // text-decoration: none;
-                    color: black;
-                    margin: 0px;
-                    padding: 0px;
+                }
+                #plant-sc-name-column {
+                    // background: purple;
+                    font-style: italic;
+                }
+                #plant-details-column {
+                    // background: brown;
+                    width: 10%;
+                }
+                td {
+                    background: #DFB589;
+                    border: 1px solid black;
+                    font-size: 16px;
                 }
             }
         }

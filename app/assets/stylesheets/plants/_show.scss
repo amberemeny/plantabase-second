@@ -4,8 +4,10 @@ main {
     #show-content {
         display: flex;
         flex-direction: column;
-        background-color: #7A8450;
+        background-color: #DFB589;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        border: #5F000B 5px solid;
+        border-radius: 5px;
         #plant-show-heading {
             // background-color: crimson;
             display: flex;
@@ -17,6 +19,7 @@ main {
                 padding: 5px 10px;
                 background-color: white;
                 box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+                // border: #5F000B 3px solid;
                 h1 {
                     line-height: 25px;
                     // background-color: orangered;
@@ -56,6 +59,7 @@ main {
                 max-width: 50%;
                 margin: 5px;
                 box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+                // border: #5F000B 3px solid;
                 img {
                     // background-color: yellowgreen;
                     max-width: 100%;
@@ -68,6 +72,7 @@ main {
                 padding: 10px;
                 height: 100%;
                 box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+                // border: #5F000B 3px solid;
             }
         }
     }

@@ -62,7 +62,7 @@ class PlantsController < ApplicationController
   end
 
   def addplant
-    
+    @user = current_user
   end
 
   def planttolist

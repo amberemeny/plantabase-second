@@ -1,6 +1,10 @@
 <h2>What List?</h2>
 
-<%= form_with(model: @plant, local: true) do |form| %>
-    <%= form.collection_select(:list_ids, List.all, :id, :name, {}, { multiple: true }) %>
-    <%= form.submit %>
+<% if @user.lists.empty? == false %>
+    <%= form_with(model: @plant, local: true) do |form| %>
+        <%= form.collection_select(:list_ids, List.all, :id, :name, {}, { multiple: true }) %>
+        <%= form.submit %>
+    <% end %>
+<% else %>
+    <h2>You have no lists!</h2>
 <% end %>
